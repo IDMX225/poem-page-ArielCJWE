@@ -77,7 +77,7 @@ textarea:not([rows]) {
 /* Begin My CSS */
 
 .container { 
-    max-width: 60rem;
+    max-width: 100rem;
     margin: 0 auto;
   }
 
@@ -85,7 +85,8 @@ body {
     font-family: Neuton;
     background-color: #262d34;
     color: #c5c2b7;
-    font-size: clamp(1.5rem, 2.5vw, 1rem); 
+    font-size: clamp(1.5rem, 2.5vw, 1rem);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
 
 }
 
@@ -94,21 +95,21 @@ h1, h2 {
     line-height: 1.1;
     margin: 1em 0 0 0;
     max-width: 65ch;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-figure {
-    width: 110%;
-    border-width: 5px;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    justify-content: center;
-    align-content: center;
-}
 /*I previously accomplished this in WEB Dev 1, so I would be making minor changes to the code*/
 /*Adding grid to start making the hover effect*/
 .grid {
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 99%;
+    border-style: double;
+    border-width: 10px;
+    border-color: #475057;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
   
   .img-wrapper {
@@ -191,31 +192,3 @@ figure img {
 
 } 
 
-@media screen and (min-width: 100em) {
-    
-
-#video{
-width: 200pt;
-}
-
-
-}
-
-iframe{
-    border-style: dotted;
-}
-
-/* Styling the contact form */
-
-#formelements {
-
-    display: grid;
-    row-gap: 1em;
-    align-items: center;
-}
-
-#contact {
-padding: .5rem;
-max-width: 600px;
-margin: 2rem auto;
-}
