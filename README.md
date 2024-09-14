@@ -5,5 +5,5 @@ This poem is represented in the layout of the page as simplistic with a dark the
 Credit for the poem goes to Wilfrid Wilson Gibson and can be found at: 
 https://www.public-domain-poetry.com/wilfrid-wilson-gibson/devils-edge-38024
 
-Where as the photo found on Unsplash was posted by Gabriel Jensen and can be found at:
+Where as the photo found on Unsplash was posted by Daniel Jensen and can be found at:
 https://unsplash.com/photos/closeup-photo-of-persons-hand-NMk1Vggt2hg
