@@ -1,30 +1,9 @@
-# Created by https://www.toptal.com/developers/gitignore/api/windows
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows
+Devil's Edge by Wilfrid Wilson Gibson
 
-### Windows ###
-# Windows thumbnail cache files
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
+This poem is represented in the layout of the page as simplistic with a dark theme showing the struggle of the character within the poem.
 
-# Dump file
-*.stackdump
+Credit for the poem goes to Wilfrid Wilson Gibson and can be found at: 
+https://www.public-domain-poetry.com/wilfrid-wilson-gibson/devils-edge-38024
 
-# Folder config file
-[Dd]esktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msix
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# End of https://www.toptal.com/developers/gitignore/api/windows
+Where as the photo found on Unsplash was posted by Gabriel Jensen and can be found at:
+https://unsplash.com/photos/closeup-photo-of-persons-hand-NMk1Vggt2hg
