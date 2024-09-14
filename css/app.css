@@ -105,9 +105,6 @@ h1, h2 {
     grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 99%;
-    border-style: double;
-    border-width: 10px;
-    border-color: #475057;
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
@@ -153,42 +150,11 @@ h1, h2 {
     opacity: 1;
   }
 
-  @media screen and (min-width : 60em) {
-    figure {
-        display:grid;
-    grid-template-columns: 2fr 1fr;}
-
-figcaption {
-    display: flex;
-justify-content: center;
-align-items: center;
-font-size: 3rem;
-font-variant: small-caps;
-margin-left: .1rem;
+  body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
-figure img {
-    width: 100%;}
-}
 
-@media screen and (min-width: 100em) {
-   
-    #photogallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    hr{
-        display: none;
-    }
-
-    #photogallery h3 {
-        grid-column: 1/-1;
-    }
-       
     
-    figure {
-        display: block;}
-
-} 
-
