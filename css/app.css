@@ -76,30 +76,39 @@ textarea:not([rows]) {
 
 /* Begin My CSS */
 
+.container { 
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+
 body {
     font-family: Neuton;
-    font-size: 20pt;
-background-color: #262d34;
-color: #c5c2b7;
+    background-color: #262d34;
+    color: #c5c2b7;
+    font-size: clamp(1.5rem, 2.5vw, 1rem); 
+
 }
 
 h1, h2 {
-    font-size: 3rem;
+    font-size: clamp(2rem, 2.5vw, 5rem);
+    line-height: 1.1;
+    margin: 1em 0 0 0;
+    max-width: 65ch;
 }
 
 figure {
-    width: 100%;
-    border-style: double;
-    border-width: 10px;
-    border-color: #6b737c;
+    width: 110%;
+    border-width: 5px;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    justify-content: center;
+    align-content: center;
 }
 /*I previously accomplished this in WEB Dev 1, so I would be making minor changes to the code*/
 /*Adding grid to start making the hover effect*/
 .grid {
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat( auto-fit, minmax(400px, 1fr));
   }
   
   .img-wrapper {
@@ -112,7 +121,7 @@ figure {
   .img-wrapper > .content {
     position: absolute;
     inset: 0;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 2.5vw, 1rem);
     padding: 1rem;
     background: rgb(71, 80, 87, .4);
     display: flex;
@@ -142,3 +151,71 @@ figure {
   .img-wrapper:hover > .content.fade {
     opacity: 1;
   }
+
+  @media screen and (min-width : 60em) {
+    figure {
+        display:grid;
+    grid-template-columns: 2fr 1fr;}
+
+figcaption {
+    display: flex;
+justify-content: center;
+align-items: center;
+font-size: 3rem;
+font-variant: small-caps;
+margin-left: .1rem;
+}
+
+figure img {
+    width: 100%;}
+}
+
+@media screen and (min-width: 100em) {
+   
+    #photogallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    hr{
+        display: none;
+    }
+
+    #photogallery h3 {
+        grid-column: 1/-1;
+    }
+       
+    
+    figure {
+        display: block;}
+
+} 
+
+@media screen and (min-width: 100em) {
+    
+
+#video{
+width: 200pt;
+}
+
+
+}
+
+iframe{
+    border-style: dotted;
+}
+
+/* Styling the contact form */
+
+#formelements {
+
+    display: grid;
+    row-gap: 1em;
+    align-items: center;
+}
+
+#contact {
+padding: .5rem;
+max-width: 600px;
+margin: 2rem auto;
+}
