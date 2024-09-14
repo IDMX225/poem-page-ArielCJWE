@@ -75,3 +75,70 @@ textarea:not([rows]) {
 /* End of Bell's Reset */
 
 /* Begin My CSS */
+
+body {
+    font-family: Neuton;
+    font-size: 20pt;
+background-color: #262d34;
+color: #c5c2b7;
+}
+
+h1, h2 {
+    font-size: 3rem;
+}
+
+figure {
+    width: 100%;
+    border-style: double;
+    border-width: 10px;
+    border-color: #6b737c;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+/*I previously accomplished this in WEB Dev 1, so I would be making minor changes to the code*/
+/*Adding grid to start making the hover effect*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
+  }
+  
+  .img-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Hover effect styling */
+
+  .img-wrapper > .content {
+    position: absolute;
+    inset: 0;
+    font-size: 2rem;
+    padding: 1rem;
+    background: rgb(71, 80, 87, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Creating transition speed*/
+
+  .img-wrapper > img,
+  .img-wrapper > .content {
+    transition: 200ms ease-in-out;
+  }
+  /* Styling the hover*/
+  .img-wrapper:hover > img.blur {
+    filter: blur(5px);
+  }
+  
+  .img-wrapper:hover > img.zoom {
+    transform: scale(1.1);
+  }
+
+  /* Changes in fading while hovering over the image*/
+  .img-wrapper > .content.fade {
+    opacity: 0;
+  }
+  .img-wrapper:hover > .content.fade {
+    opacity: 1;
+  }
